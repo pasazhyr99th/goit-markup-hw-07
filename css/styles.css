@@ -116,6 +116,7 @@ ul {
     background-color: var(--primary-bg-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    cursor: pointer;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -166,7 +167,6 @@ ul {
 }
 
 .form-input {
-    position: relative;
     width: 100%;
     padding: 12px 12px 12px 42px;
     outline: none;
@@ -189,7 +189,6 @@ ul {
     position: absolute;
     top: 50%;
     left: 12px;
-    transform: translateY(-50%);
 
     fill: currentColor;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -219,16 +218,6 @@ ul {
 
 .form-checkbox {
     appearance: none;
-
-    /* 
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden; */
 }
 
 .checkbox {
@@ -245,6 +234,9 @@ ul {
 
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-checkbox:checked + .checkbox-icon {
@@ -299,8 +291,8 @@ ul {
     background-color: var(--button-focus-color);
 }
 
-.thumb:focus-within > .form-icon,
-.thumb:hover > .form-icon {
+.form-input:focus-within ~ .form-icon,
+.form-input:hover ~ .form-icon {
     color: var(--blue-text-color);
 }
 
@@ -717,6 +709,7 @@ ul {
 
 .footer-content {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-logo {
@@ -770,7 +763,6 @@ ul {
 
 .footer-soc {
     margin-left: 93px;
-    margin-top: 12px;
 }
 
 .footer-soc-title {
@@ -826,7 +818,6 @@ ul {
 
 .footer-newsletter {
     margin-left: 93px;
-    margin-top: 12px;
 }
 
 .footer-subscribe {
@@ -843,11 +834,11 @@ ul {
 
 .footer-form {
     display: flex;
+    gap: 12px;
     align-items: center;
 }
 
 .subscribe-input {
-    margin-right: 12px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
@@ -878,6 +869,7 @@ ul {
     justify-content: center;
     width: 200px;
     height: 50px;
+    gap: 10px;
 
     font-family: 'Roboto';
     color: var(--primary-bg-color);
@@ -897,10 +889,6 @@ ul {
 .subscribe-btn:hover,
 .subscribe-btn:focus {
     background-color: var(--button-focus-color);
-}
-
-.icon-subscribe {
-    margin-left: 10px;
 }
 
 /* List of buttons on Portfolio */
