@@ -1,16 +1,16 @@
-.benefits-box {
+.benefits__box {
     display: flex;
-
-    & .item {
-        flex-basis: calc((100% - 90px) / 4);
-    }
-
-    & .item + .item {
-        margin-left: 30px;
-    }
 }
 
-.benefits-content {
+.benefits__item {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.benefits__item + .benefits__item {
+    margin-left: 30px;
+}
+
+.benefits__content {
     display: block;
     margin-bottom: 30px;
     padding: 25px 100px;
@@ -18,7 +18,7 @@
     background-color: getColor('bg-team-color');
 }
 
-.benefits-title {
+.benefits__title {
     margin-bottom: 10px;
 
     font-size: 14px;
@@ -27,7 +27,7 @@
     letter-spacing: 0.03em;
 }
 
-.benefits-item {
+.benefits__paragraph {
     color: getColor('contacts-header-color');
     font-size: 14px;
     line-height: 1.71;

@@ -1,17 +1,17 @@
-.actions {
+.teammates__socials {
     display: flex;
     margin: 0 32px;
 }
 
-.item-icon {
+.teammates__socials-icon {
     flex-basis: calc((100% - 40px) / 4);
-
-    & + & {
-        margin-left: 10px;
-    }
 }
 
-.social-link {
+.teammates__socials-icon + .teammates__socials-icon {
+    margin-left: 10px;
+}
+
+.teammates__socials-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +33,6 @@
     }
 }
 
-.team-icon {
+.soc-icon {
     fill: currentColor;
 }

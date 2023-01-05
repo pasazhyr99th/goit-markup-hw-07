@@ -1,9 +1,9 @@
-.project-thumb {
+.project__thumb {
     position: relative;
     overflow: hidden;
 }
 
-.project-overlay {
+.project__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -16,11 +16,11 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-projects .item:hover .project-overlay {
+.project__item:hover .project__overlay {
     transform: translateY(0);
 }
 
-.project-text {
+.project__overlay-text {
     padding: 63px 24px;
 
     color: getColor('primary-bg-color');

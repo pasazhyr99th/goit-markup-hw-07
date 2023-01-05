@@ -1,5 +1,5 @@
-.mail-footer,
-.tel-footer {
+.footer__mail,
+.footer__tel {
     color: getColor('contacts-footer-color');
     font-size: 14px;
     line-height: 1.71;
@@ -14,7 +14,7 @@
     }
 }
 
-.mail-footer {
+.footer__mail {
     display: block;
     margin-bottom: 12px;
 }

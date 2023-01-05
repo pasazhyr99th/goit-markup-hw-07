@@ -1,4 +1,4 @@
-.header-logo {
+.header__logo {
     font-family: 'Raleway';
     color: getColor('black-text-color');
     font-size: 26px;
@@ -7,7 +7,7 @@
     letter-spacing: 0.03em;
 }
 
-.footer-logo {
+.footer__logo {
     display: inline-block;
     margin-bottom: 28px;
 
@@ -19,6 +19,6 @@
     letter-spacing: 0.03em;
 }
 
-.blue-logo {
+.logo--blue {
     color: getColor('blue-text-color');
 }

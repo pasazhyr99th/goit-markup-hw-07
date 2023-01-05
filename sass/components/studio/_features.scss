@@ -1,12 +1,8 @@
 .features {
-    display: flex;
-
-    & .item + .item {
-        margin-left: 30px;
-    }
+    padding-top: 0px;
 }
 
-.features-title {
+.features__title {
     margin-bottom: 50px;
 
     font-size: 36px;
@@ -15,11 +11,19 @@
     letter-spacing: 0.03em;
 }
 
-.photo-features {
+.features__list {
+    display: flex;
+}
+
+.features__item {
     position: relative;
 }
 
-.features-description {
+.features__item + .features__item {
+    margin-left: 30px;
+}
+
+.features__description {
     display: flex;
     position: absolute;
     bottom: 0;

@@ -2,7 +2,7 @@
     margin-left: 93px;
 }
 
-.footer-soc-title {
+.footer-soc__title {
     margin-bottom: 20px;
 
     color: getColor('primary-bg-color');
@@ -14,19 +14,20 @@
     text-transform: uppercase;
 }
 
-.footer-actions {
+.footer-soc__actions {
     display: flex;
 }
 
-.item-footer-icon {
+.footer-soc__item {
     flex-basis: calc((100% - 40px) / 4);
 
     & + & {
         margin-left: 10px;
     }
+    // Ви напевно забракуєте це, але як на мене це дуже зручно
 }
 
-.footer-social {
+.footer-soc__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +48,6 @@
     }
 }
 
-.team-icon {
+.footer-soc__icon {
     fill: currentColor;
 }

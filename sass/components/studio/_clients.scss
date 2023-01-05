@@ -1,4 +1,4 @@
-.clients-title {
+.clients__title {
     margin-bottom: 50px;
 
     font-size: 36px;
@@ -7,11 +7,11 @@
     letter-spacing: 0.03em;
 }
 
-.clients {
+.clients__list {
     display: flex;
 }
 
-.item-clients {
+.clients__item {
     flex-basis: calc((100% - 150px) / 6);
 
     border: 1px solid getColor('icons-noactive-color');
@@ -19,17 +19,17 @@
     
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    & + & {
-        margin-left: 30px;
-    }
-
     &:hover,
     &:focus {
         border-color: getColor('blue-text-color');
     }
 }
 
-.clients-link {
+.clients__item + .clients__item {
+    margin-left: 30px;
+}
+
+.clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +47,6 @@
     }
 }
 
-.client-icon {
+.client__icon {
     fill: currentColor;
 }

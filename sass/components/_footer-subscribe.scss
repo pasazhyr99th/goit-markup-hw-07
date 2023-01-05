@@ -1,10 +1,26 @@
-.footer-form {
+.subscribe {
+    margin-left: 93px;
+}
+
+.subscribe__title {
+    margin-bottom: 20px;
+
+    color: getColor('primary-bg-color');
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.subscribe__form {
     display: flex;
     gap: 12px;
     align-items: center;
 }
 
-.subscribe-input {
+.subscribe__input {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
