@@ -1,0 +1,35 @@
+.benefits-box {
+    display: flex;
+
+    & .item {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+
+    & .item + .item {
+        margin-left: 30px;
+    }
+}
+
+.benefits-content {
+    display: block;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+
+    background-color: getColor('bg-team-color');
+}
+
+.benefits-title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.benefits-item {
+    color: getColor('contacts-header-color');
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
